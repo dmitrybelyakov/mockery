@@ -90,7 +90,7 @@ class Generator
 
         //turn of strict
         $errorReporting = error_reporting();
-        error_reporting($errorReporting ^ E_STRICT);
+        error_reporting(E_ALL ^ E_STRICT);
 
         eval($definition);
 
